@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Krykk Ltd | Fractional CRO &amp; GTM for scale-ups</title>
+  <meta name="description" content="Krykk Ltd helps AI and enterprise software scale-ups build repeatable revenue: fractional CRO leadership, go-to-market strategy and sales team performance. London, UK.">
+  <link rel="canonical" href="https://krykk.com/">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Krykk Ltd | Fractional CRO &amp; GTM for scale-ups">
+  <meta property="og:description" content="Revenue and go-to-market execution for AI and enterprise software companies.">
+  <meta property="og:url" content="https://krykk.com/">
+  <meta property="og:image" content="https://krykk.com/assets/krykk-mark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #0f1720;
+      --ink-2: #3c4653;
+      --muted: #6b7684;
+      --line: #e3e7ec;
+      --paper: #ffffff;
+      --wash: #f4f7fa;
+      --blue: #1e5a9e;
+      --blue-dark: #15457a;
+      --radius: 14px;
+      --max: 1120px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: var(--blue); }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+
+    /* Header */
+    header {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(255,255,255,.92);
+      backdrop-filter: saturate(180%) blur(8px);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+    .nav img { height: 34px; width: auto; }
+    .nav ul { display: flex; gap: 28px; list-style: none; margin: 0; padding: 0; align-items: center; }
+    .nav ul a { color: var(--ink-2); text-decoration: none; font-weight: 500; font-size: 15px; }
+    .nav ul a:hover { color: var(--ink); }
+    .btn {
+      display: inline-block; padding: 12px 22px; border-radius: 999px;
+      background: var(--blue); color: #fff !important; text-decoration: none;
+      font-weight: 600; font-size: 15px; transition: background .15s;
+    }
+    .btn:hover { background: var(--blue-dark); }
+    .btn.ghost { background: transparent; color: var(--ink) !important; border: 1px solid var(--line); }
+    .btn.ghost:hover { border-color: var(--ink-2); background: transparent; }
+
+    /* Hero */
+    .hero { padding: 96px 0 88px; }
+    .eyebrow {
+      font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+      color: var(--blue); margin: 0 0 18px;
+    }
+    h1 {
+      font-size: clamp(36px, 5.4vw, 60px); line-height: 1.08; letter-spacing: -.025em;
+      margin: 0 0 24px; max-width: 16ch; font-weight: 700;
+    }
+    .lead { font-size: clamp(18px, 2vw, 20px); color: var(--ink-2); max-width: 58ch; margin: 0 0 36px; }
+    .cta { display: flex; gap: 12px; flex-wrap: wrap; }
+    .facts {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 0;
+      margin-top: 72px; border-top: 1px solid var(--line);
+    }
+    .facts div { padding: 24px 24px 0 0; }
+    .facts strong { display: block; font-size: 28px; letter-spacing: -.02em; }
+    .facts span { color: var(--muted); font-size: 15px; }
+
+    /* Sections */
+    section { padding: 88px 0; }
+    section.alt { background: var(--wash); }
+    h2 { font-size: clamp(28px, 3.4vw, 38px); letter-spacing: -.02em; line-height: 1.15; margin: 0 0 14px; }
+    .section-intro { color: var(--ink-2); max-width: 60ch; margin: 0 0 48px; font-size: 18px; }
+
+    .grid { display: grid; gap: 20px; }
+    .grid.four { grid-template-columns: repeat(4, 1fr); }
+    .grid.three { grid-template-columns: repeat(3, 1fr); }
+    .card {
+      background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 28px;
+    }
+    .card h3 { font-size: 19px; margin: 0 0 10px; letter-spacing: -.01em; }
+    .card p { margin: 0; color: var(--ink-2); font-size: 15.5px; }
+    .num {
+      display: inline-flex; width: 32px; height: 32px; border-radius: 50%;
+      align-items: center; justify-content: center; margin-bottom: 18px;
+      background: #e8f0f9; color: var(--blue); font-weight: 700; font-size: 14px;
+    }
+
+    /* About */
+    .about { display: grid; grid-template-columns: 1fr 1.4fr; gap: 64px; align-items: start; }
+    .about p { color: var(--ink-2); font-size: 17px; margin: 0 0 16px; }
+    .pill-list { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 24px 0 0; }
+    .pill-list li { border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px; font-size: 14px; color: var(--ink-2); background: var(--paper); }
+
+    /* Products */
+    .feature {
+      display: grid; grid-template-columns: 1.3fr 1fr; gap: 40px; align-items: center;
+      background: var(--ink); color: #fff; border-radius: 20px; padding: 44px; margin-bottom: 28px;
+    }
+    .feature .tag { display: inline-block; font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: #9cc3ee; margin-bottom: 12px; }
+    .feature h3 { font-size: 30px; margin: 0 0 12px; letter-spacing: -.02em; }
+    .feature p { color: #c9d2dc; margin: 0; font-size: 17px; }
+    .feature ul { margin: 0; padding: 0; list-style: none; }
+    .feature li { padding: 12px 0; border-bottom: 1px solid #2a3542; color: #dfe6ee; font-size: 15.5px; }
+    .feature li:last-child { border-bottom: 0; }
+
+    .app { display: flex; flex-direction: column; }
+    .app img { width: 64px; height: 64px; border-radius: 15px; margin-bottom: 18px; border: 1px solid var(--line); }
+    .app p { flex: 1; }
+    .stores { display: flex; gap: 14px; margin-top: 18px; font-size: 14px; font-weight: 600; flex-wrap: wrap; }
+    .stores a { text-decoration: none; }
+    .stores a:hover { text-decoration: underline; }
+
+    /* Contact */
+    .contact { text-align: center; }
+    .contact h2 { margin-bottom: 14px; }
+    .contact p { color: var(--ink-2); font-size: 18px; max-width: 52ch; margin: 0 auto 32px; }
+    .contact .email { display: block; margin-top: 18px; color: var(--muted); font-size: 15px; }
+
+    footer { border-top: 1px solid var(--line); padding: 36px 0 44px; font-size: 14px; color: var(--muted); }
+    .foot { display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+    .foot p { margin: 0 0 4px; }
+
+    @media (max-width: 960px) {
+      .grid.four { grid-template-columns: repeat(2, 1fr); }
+      .about, .feature { grid-template-columns: 1fr; gap: 28px; }
+    }
+    @media (max-width: 640px) {
+      .wrap { padding: 0 16px; }
+      .nav ul li:not(:last-child) { display: none; }
+      .nav img { height: 28px; }
+      .btn { padding: 10px 18px; }
+      .hero { padding: 56px 0 56px; }
+      section { padding: 64px 0; }
+      .grid.four, .grid.three { grid-template-columns: 1fr; }
+      .facts { grid-template-columns: 1fr; margin-top: 48px; }
+      .facts div { padding: 18px 0 0; }
+      .feature { padding: 28px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" aria-label="Krykk Ltd home"><img src="assets/krykk-logo.png" alt="Krykk Ltd" width="640" height="181"></a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a class="btn" href="#contact">Get in touch</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Fractional CRO &middot; Go-to-market &middot; London</p>
+      <h1>Revenue &amp; GTM execution for AI and enterprise software.</h1>
+      <p class="lead">Krykk helps scale-ups turn early traction into a sales engine that repeats: the right go-to-market plan, a team that executes it, and senior leadership in the room when the big deals are on the line.</p>
+      <div class="cta">
+        <a class="btn" href="mailto:raphael@krykk.com?subject=Conversation%20with%20Krykk">Book a conversation</a>
+        <a class="btn ghost" href="#services">See services</a>
+      </div>
+      <div class="facts">
+        <div><strong>25+ years</strong><span>in enterprise software sales</span></div>
+        <div><strong>UK &amp; EMEA</strong><span>new logos, renewals and partners</span></div>
+        <div><strong>Hands-on</strong><span>strategy and execution, not slideware</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <section id="services" class="alt">
+    <div class="wrap">
+      <h2>Services</h2>
+      <p class="section-intro">Flexible, senior commercial leadership for companies that need results before they need a full-time executive.</p>
+      <div class="grid four">
+        <article class="card">
+          <span class="num">01</span>
+          <h3>Fractional CRO</h3>
+          <p>Part-time revenue leadership: forecasting, pipeline discipline, pricing and board-level reporting, without the cost of a full-time hire.</p>
+        </article>
+        <article class="card">
+          <span class="num">02</span>
+          <h3>Go-to-market strategy</h3>
+          <p>Ideal customer profile, positioning, sales motion and channel choices, built into a plan your team can run from Monday.</p>
+        </article>
+        <article class="card">
+          <span class="num">03</span>
+          <h3>Sales team performance</h3>
+          <p>Process, playbooks, deal reviews and coaching that lift win rates and shorten sales cycles.</p>
+        </article>
+        <article class="card">
+          <span class="num">04</span>
+          <h3>Enterprise deals &amp; partners</h3>
+          <p>Hands-on support on strategic opportunities, renewals and partner programmes across the UK and EMEA.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section>
+    <div class="wrap">
+      <h2>How we work</h2>
+      <p class="section-intro">Every engagement is shaped around where you are today. Most follow three steps.</p>
+      <div class="grid three">
+        <div class="card">
+          <h3>1. Diagnose</h3>
+          <p>A short, focused review of pipeline, team, process and market to find what is really holding revenue back.</p>
+        </div>
+        <div class="card">
+          <h3>2. Build</h3>
+          <p>A clear GTM plan with priorities, targets and the operating rhythm to deliver them.</p>
+        </div>
+        <div class="card">
+          <h3>3. Run</h3>
+          <p>Ongoing leadership alongside your team, measured on outcomes, for as long as it is useful.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="alt">
+    <div class="wrap about">
+      <div>
+        <h2>About Krykk</h2>
+      </div>
+      <div>
+        <p>Krykk Ltd is led by Raphael Vergnaud, a revenue leader with more than 25 years of enterprise software sales experience across account executive and CRO roles.</p>
+        <p>His experience includes technology companies such as Tangoe, Zendrive and DiffusionData, working with enterprise buyers across the UK and Europe. Krykk brings that experience to founders and leadership teams who want to grow faster with fewer missteps.</p>
+        <p>Krykk also builds its own software, so the advice comes from people who ship products as well as sell them.</p>
+        <ul class="pill-list">
+          <li>Fractional CRO</li>
+          <li>GTM strategy</li>
+          <li>Enterprise sales</li>
+          <li>Renewals &amp; expansion</li>
+          <li>Partner management</li>
+          <li>AI &amp; SaaS</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="products">
+    <div class="wrap">
+      <h2>Products</h2>
+      <p class="section-intro">Software built by the Krykk team.</p>
+
+      <div class="feature">
+        <div>
+          <span class="tag">Now building</span>
+          <h3>TrackSales</h3>
+          <p>An AI-native CRM for founders, consultants and small teams who find traditional CRMs too complex. Less admin, more selling.</p>
+        </div>
+        <ul>
+          <li>Built for people who sell as part of a bigger job</li>
+          <li>AI-native from the ground up</li>
+          <li>Simple by design: no admin team required</li>
+        </ul>
+      </div>
+
+      <div class="grid four">
+        <article class="card app">
+          <img src="assets/app-discoverchat.webp" alt="" width="64" height="64" loading="lazy">
+          <h3>Discover Chat</h3>
+          <p>An AI assistant in your pocket: ask anything and create images.</p>
+          <div class="stores">
+            <a href="https://apps.apple.com/us/app/discover-chat/id6449590348" rel="noopener">App Store</a>
+            <a href="https://play.google.com/store/apps/details?id=com.app.discoverchats&amp;hl=en_GB" rel="noopener">Google Play</a>
+          </div>
+        </article>
+        <article class="card app">
+          <img src="assets/app-nomorehotdogs.webp" alt="" width="64" height="64" loading="lazy">
+          <h3>No More Hot-Dogs</h3>
+          <p>Meal planning, fridge management, recipes by ingredient and automatic shopping lists.</p>
+          <div class="stores">
+            <a href="https://apps.apple.com/us/app/nmhd-recipes-and-meal-planner/id1562802319" rel="noopener">App Store</a>
+            <a href="https://www.nomorehotdogs.com/" rel="noopener">Website</a>
+          </div>
+        </article>
+        <article class="card app">
+          <img src="assets/app-abckids.webp" alt="" width="64" height="64" loading="lazy">
+          <h3>ABC Kids International</h3>
+          <p>The alphabet song, picture word cards and a memory game for young learners.</p>
+          <div class="stores">
+            <a href="https://apps.apple.com/us/app/abc-kid-international/id6503429799" rel="noopener">App Store</a>
+            <a href="https://play.google.com/store/apps/details?id=com.cv5.abc&amp;hl=en_GB" rel="noopener">Google Play</a>
+          </div>
+        </article>
+        <article class="card app">
+          <img src="assets/app-knowyourcontacts.webp" alt="" width="64" height="64" loading="lazy">
+          <h3>Know Your Contacts</h3>
+          <p>Contact cards, birthday reminders and never forgetting the kids&rsquo; names.</p>
+          <div class="stores">
+            <a href="https://apps.apple.com/us/app/know-your-contacts/id6572281032" rel="noopener">App Store</a>
+            <a href="https://play.google.com/store/apps/details?id=com.network.kyc&amp;hl=en_GB" rel="noopener">Google Play</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="alt contact">
+    <div class="wrap">
+      <h2>Let&rsquo;s talk about your growth</h2>
+      <p>Tell me where you are today and where you want to be. Let&rsquo;s see if Krykk can help you get there.</p>
+      <a class="btn" href="mailto:raphael@krykk.com?subject=Conversation%20with%20Krykk">Email Raphael</a>
+      <a class="email" href="mailto:raphael@krykk.com">raphael@krykk.com</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <p><strong style="color:var(--ink)">Krykk Ltd</strong></p>
+      <p>Registered in England &amp; Wales, company no. 15883695</p>
+      <p>124&ndash;128 City Road, London EC1V 2NX</p>
+    </div>
+    <div>
+      <p>&copy; <span id="y">2026</span> Krykk Ltd. All rights reserved.</p>
+      <p>This site uses no cookies and no tracking.</p>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
